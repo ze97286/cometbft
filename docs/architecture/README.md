@@ -42,7 +42,7 @@ numbering our ADRs from 100 onwards.
 
 ### Proposed
 
-- [ADR-084: Data companion pull API](./adr-084-data-companion-pull-api.md)
+- [ADR-101: Data companion pull API](./adr-101-data-companion-pull-api.md)
 
 ### Accepted
 
