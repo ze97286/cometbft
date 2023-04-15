@@ -165,6 +165,7 @@ func (blockExec *BlockExecutor) ProcessProposal(
 		NextValidatorsHash: block.NextValidatorsHash,
 	})
 	if err != nil {
+		blockExec.logger.Error("error in ProcessProposal", err.Error())
 		return false, err
 	}
 	if resp.IsStatusUnknown() {

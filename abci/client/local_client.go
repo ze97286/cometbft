@@ -160,7 +160,7 @@ func (app *localClient) PrepareProposal(ctx context.Context, req *types.RequestP
 func (app *localClient) ProcessProposal(ctx context.Context, req *types.RequestProcessProposal) (*types.ResponseProcessProposal, error) {
 	app.mtx.Lock()
 	defer app.mtx.Unlock()
-
+	println("calling process proposal for height", req.Height)
 	return app.Application.ProcessProposal(ctx, req)
 }
 
